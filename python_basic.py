@@ -2,20 +2,27 @@ print("**********************************")
 print("Bem vindo ao Jogo de adivinhação")
 print("**********************************")
 
+total_tentativas = 5
 numero_secreto = 10
+atual_tentiva = 0
 
-chute = int(input("Digite seu chute: "))
+while total_tentativas > atual_tentiva:
 
-print("Chute: ", chute)
+    atual_tentiva += 1
+    print(f"tentativa {atual_tentiva} de {total_tentativas}")
+    chute = int(input("Digite seu chute: "))
+    print("Chute: ", chute)
+    acertou = numero_secreto == chute
+    maior = numero_secreto < chute
 
-acertou = numero_secreto == chute
-maior = numero_secreto > chute
+    if acertou:
+        print("Você acertou!")
+        break
 
-
-if acertou:
-    print("Você acertou!")
-else:
-    if maior:
-        print("Seu chute foi maior")
     else:
-        print("Seu chute foi menor")
+        if maior:
+            print("Seu chute foi maior")
+        else:
+                print("Seu chute foi menor")
+
+print("Game Over ☠")
