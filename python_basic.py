@@ -23,6 +23,6 @@ while total_tentativas > atual_tentiva:
         if maior:
             print("Seu chute foi maior")
         else:
-                print("Seu chute foi menor")
+            print("Seu chute foi menor")
 
 print("Game Over ☠")
