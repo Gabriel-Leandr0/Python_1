@@ -48,3 +48,7 @@ def adivinhacao():
 
     print("Pontos: ", pontos)
     print("Game Over ☠")
+
+
+if __name__ == "__main__":
+    adivinhacao()
